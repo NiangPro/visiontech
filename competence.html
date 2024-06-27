@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        .container {
+            border: none;
+            margin-top: 800px;
+            width: 100%;
+            margin: auto;
+            margin-top: 70px;
+            justify-content: center;
+            
+            
+        }
+        .navbar{
+    border: none;
+    position: relative;
+    background: black;
+   position: fixed;
+   width: 100%;
+   top: 0px;
+   left: 0px;
+   z-index: +5;
+   display: flex;
+}
+.LG{
+    justify-content: end;
+    width: 80px;
+    margin-left: 100px;
+}     
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    column-gap: 10px;
+    position: absolute;
+    right: 100px;
+    bottom: 15px;
+}
+ul li a{
+
+    text-decoration:none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    
+    border: 2ps solid black;
+    padding: 8px 13px;
+}
+ul li a:hover{
+  background: linear-gradient(to right, rgb(0, 191, 255), rgb(82, 237, 82));
+    color: black;
+    padding: 8px 13px;
+    border-radius: 15px;
+    transition: 1s;
+}
+        
+
+        .compétence {
+            justify-content: flex-start;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 35px;
+            gap: 35px;
+            
+        }
+
+        #comp {
+            width: 270px;
+            height: 400px; 
+            text-align: center;
+            position: relative;
+            padding: 10px;
+            box-sizing: border-box;
+    box-shadow: 2px 2px  2px 2px  black ;
+            border-radius: 10px 40px;
+       
+          
+        }
+        *{  
+            scroll-behavior:smooth;
+        }
+
+        #comp img {
+            width: 200px; 
+            height: 100px; 
+            
+           
+        }
+
+        #comp p {
+            text-align: justify;
+            font-family: 12px;
+           
+        }
+        #comp a {
+            border-radius: 25px;
+    padding: 10px;
+    text-decoration: none;
+    background:linear-gradient(to right, rgb(0, 191, 255),rgb(82, 237 ,82)) ;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 20px;
+    margin: auto;
+    left: 89px;
+    
+        }
+        .un{
+            left: 0px;
+            font-family: 'Arial', sans-serif; 
+            font-size: 36px; 
+            color: white; 
+            text-align: center; 
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+            padding: 20px;
+            border: 2px solid black;  
+            border-radius: 10px; 
+            background:linear-gradient(to right, rgb(0, 191, 255),rgb(82, 237 ,82)) ;
+            margin: 20px auto;
+            max-width: 600px; 
+            box-shadow: 0 4px 8px black ;
+            transition:  2s;
+        }
+     a.hovze{
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+     }
+     #slogan
+                  {
+                      /* border: 1px solid black; */
+                      /* background: whitesmoke; */
+                      background: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, .8), rgba(0, 0, 0, 1)), url(FOND\ VT.jpg);
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      
+                      width: 100%;
+                      height: 120%;
+                      margin: auto;
+                      margin-left: -8px;
+                      z-index: 10; 
+                      margin-top: 0px;
+                      padding-right: 20px;
+                      position: relative; 
+                  }
+              
+              #slogan .citation .s
+                  {
+                      margin: 0px;
+                      /* padding: 0px; */
+                      font-family:'Times New Roman', Times, serif sans-serif 'Open Sans' ;
+                      font-weight: 300;
+                      color: white;
+                    text-shadow: 2px 2px 2px black;
+
+                      font-size: 30px;
+                      display: block;
+                      position: relative;
+                      width: 30%;
+                      margin: auto;
+                      padding: 150px 150px;
+                      font-size: 30px;
+                      line-height: 30px;
+                      text-align: center;
+                      font-style: italic;
+                      
+                  } 
+                  
+              #slogan .citation .s::before
+                  {
+                      content: '\201c';
+                      top: 150px;
+                      left: 70px;
+                  } 
+                   
+              #slogan .citation .s::after
+                  {
+                      content: '\201d';
+                      bottom: 90px;
+                      left: 500px;
+                  }
+              
+              #slogan .citation .s::before,#slogan .citation .s::after
+                  {
+                      font-size: 80px;
+                      position: absolute;
+                      
+                  }                
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img class="LG" src="VT-RBG.png" alt="">
+        <ul>
+         
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="apropos.html">A propos</a></li>
+          <li><a href="competence.html">Compétences</a></li>
+          <li><a href="#con">Contact</a></li>
+        </ul>
+     </div>
+    <div class="container">   
+        <h1 class="un">COMPETENCES</h1>
+        <div class="compétence">
+            
+            <div id="comp">
+                <img class="" src="html.jpg" alt="" >
+                <h2>Html</h2>
+                <p>HTML (HyperText Markup Language) est le langage standard pour structurer le contenu des
+                     pages web. Il utilise des balises pour organiser des éléments comme titres, paragraphes, images et liens.</p>
+                <a href="" >Voir le cours</a>
+            </div>
+            <div id="comp">
+                <img src="CSS.jpg" alt="">
+                <h2>Css</h2>
+                <p>CSS (Cascading Style Sheets) est un langage utilisé pour décrire l'apparence et la mise en page des pages web.
+                     Il permet de définir les styles des éléments HTML comme couleurs, polices, espacements et disposition.</p> 
+                <a href=""  >Voir le cours</a>
+            </div>
+            <div id="comp">
+                
+                <img src="java-script.jpg" alt="">
+                <h2>java-script</h2>
+                <p>JavaScript est un langage de programmation utilisé pour rendre les pages web interactives. Il permet de manipuler le contenu HTML et
+                     CSS, gérer les événements, et créer des fonctionnalités dynamiques comme animations et formulaires interactifs..</p>
+                <a class="hover"    href=""  >Voir le cours</a>
+            </div>
+        </div>
+        <div class="compétence">
+           
+            <div id="comp">
+                <img src="boostrap.jpg" alt="">
+                <h2>Bootstrap</h2>
+                <p>Bootstrap est un framework CSS open-source pour faciliter le développement de sites web réactifs et mobiles. Il propose des classes CSS et des composants JavaScript
+                     pour typographie, formulaires, boutons, navigation, et autres éléments d'interface utilisateur.</p>
+                <a href=""  >Voir le cours</a>
+            </div>
+            <div id="comp">
+                
+                <img src="php.jpg" alt="">
+                <h2>Php</h2>
+                <p> PHP (Hypertext Preprocessor) est un langage de script côté serveur pour développer des pages web dynamiques. Il permet de 
+                    générer du contenu HTML, interagir avec des bases de données, gérer les sessions et les cookies, et plus encore.</p>
+                <a href=""  >Voir le cours</a>
+            </div>
+           
+            <div id="comp">
+                <img src="mysql.jpg" alt="">
+                <h2>MySQL
+                </h2>
+                <p>MySQL est un système de gestion de base de données relationnelle (SGBDR) open-source. Il utilise le langage SQL pour gérer et manipuler
+                     les données, couramment utilisé pour les applications web en raison de sa performance, fiabilité et simplicité.</p>
+                <a href=""  class="hover">Voir le cours</a>
+            </div>
+        </div>
+    </div>
+    <section id="slogan">
+        <div class="citation">
+            <p class="s">Concevoir aujourd'hui le web de demain!
+                Votre vision, notre mission web.
+            </p>
+
+        </div>
+
+    </section>
+</body>
+</html>
